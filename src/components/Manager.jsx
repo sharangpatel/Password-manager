@@ -53,7 +53,7 @@ const Manager = () => {
 
 
       //if any such entries exists in the db, delete it!
-      await fetch("http://localhost:3000/", { method:"DELETE" , headers :{"Content-Type":"application/json"},body:JSON.stringify({id:form.id})}) 
+      //await fetch("http://localhost:3000/", { method:"DELETE" , headers :{"Content-Type":"application/json"},body:JSON.stringify({id:form.id})}) 
 
       setpasswordArray([...passwordArray, {...form,id:uuidv4() }]);
 
